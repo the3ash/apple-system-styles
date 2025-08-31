@@ -1,0 +1,57 @@
+[
+  {
+    "name": ".largeTitle",
+    "size": "34",
+    "weight": "400"
+  },
+  {
+    "name": ".title",
+    "size": "28",
+    "weight": "400"
+  },
+  {
+    "name": ".title2",
+    "size": "22",
+    "weight": "400"
+  },
+  {
+    "name": ".title3",
+    "size": "20",
+    "weight": "400"
+  },
+  {
+    "name": ".headline",
+    "size": "17",
+    "weight": "590"
+  },
+  {
+    "name": ".subheadline",
+    "size": "15",
+    "weight": "400"
+  },
+  {
+    "name": ".body",
+    "size": "17",
+    "weight": "400"
+  },
+  {
+    "name": ".callout",
+    "size": "16",
+    "weight": "400"
+  },
+  {
+    "name": ".footnote",
+    "size": "13",
+    "weight": "400"
+  },
+  {
+    "name": ".caption",
+    "size": "12",
+    "weight": "400"
+  },
+  {
+    "name": ".caption2",
+    "size": "11",
+    "weight": "400"
+  }
+]
