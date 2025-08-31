@@ -34,10 +34,10 @@ const TextItem = ({ text }: TextItemProps) => {
   return (
     <div>
       <div
-        className="flex items-center h-20 px-8 md:px-14 cursor-pointer hover:bg-black/4 transition-colors ease-out duration-100"
+        className="flex items-center h-20 px-6 md:px-14 cursor-pointer hover:bg-black/4 transition-colors ease-out duration-100"
         onClick={handleCopy}
       >
-        <div className="w-1/2 flex items-center">
+        <div className="w-2/3 md:w-1/2 flex items-center">
           <span
             className="font-sans text-left"
             style={{
@@ -49,12 +49,12 @@ const TextItem = ({ text }: TextItemProps) => {
           </span>
         </div>
 
-        <div className="w-1/2 flex items-center justify-between">
+        <div className="w-1/3 md:w-1/2 flex items-center justify-between">
           <span className="text-body text-left">{text.name}</span>
           {copied && <span className="text-body">(√)</span>}
         </div>
       </div>
-      <Border className="px-8 md:px-14" />
+      <Border className="px-6 md:px-14" />
     </div>
   )
 }

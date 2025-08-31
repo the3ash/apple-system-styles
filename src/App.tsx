@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen font-mono mx-auto px-7 py-16">
+    <div className="min-h-screen font-mono mx-auto px-4 md:px-7 py-16">
       <div className="max-w-[1080px] mx-auto">
         <Header
           title="Apple System Styles"
