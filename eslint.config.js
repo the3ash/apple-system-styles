@@ -3,7 +3,6 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
-import prettier from 'eslint-plugin-prettier'
 import prettierConfig from 'eslint-config-prettier'
 import { globalIgnores } from 'eslint/config'
 
@@ -18,14 +17,11 @@ export default tseslint.config([
       reactRefresh.configs.vite,
       prettierConfig,
     ],
-    plugins: {
-      prettier,
-    },
     rules: {
-      'prettier/prettier': 'error',
+      'no-console': 'warn',
     },
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       globals: globals.browser,
     },
   },
