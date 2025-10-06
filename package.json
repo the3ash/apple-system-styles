@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "@proj-airi/font-departure-mono": "0.7.2-beta.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@tailwindcss/vite": "^4.1.13",
-    "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
