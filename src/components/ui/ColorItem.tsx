@@ -2,25 +2,29 @@ import { useState } from 'react'
 import type { ColorItemProps } from '../../types'
 import { copyText } from '../../utils/clipboard'
 
-const ColorItem = ({ color, colorType }: ColorItemProps) => {
+const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
   const [showCheckmark, setShowCheckmark] = useState(false)
 
-  const getCopyText = () => {
+  const displayName = (() => {
     const cleanName = color.name.startsWith('.') ? color.name.slice(1) : color.name
 
-    switch (colorType) {
-      case 'uicolor':
-        return `UIColor.${cleanName}`
-      case 'nscolor':
-        return `NSColor.${cleanName}`
-      default:
-        return color.name
+    if (prefixType === 'off') {
+      return color.name
     }
-  }
+
+    if (contentType === 'ui-colors') {
+      return `UIColor.${cleanName}`
+    }
+
+    if (contentType === 'ns-colors') {
+      return `NSColor.${cleanName}`
+    }
+
+    return color.name
+  })()
 
   const handleClick = async () => {
-    const copyTextValue = getCopyText()
-    const success = await copyText(copyTextValue)
+    const success = await copyText(displayName)
     if (success) {
       setShowCheckmark(true)
       setTimeout(() => setShowCheckmark(false), 500)
@@ -57,7 +61,7 @@ const ColorItem = ({ color, colorType }: ColorItemProps) => {
       {/* Color info */}
       <div className="flex flex-col text-body flex-1 min-w-0">
         <span>
-          {color.name}
+          {displayName}
           {showCheckmark && <span className={`ml-2 ${textColorClass}`}>(√)</span>}
         </span>
         <div className="color-info-layout">

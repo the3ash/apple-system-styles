@@ -3,24 +3,36 @@ import Switch from './components/ui/Switch'
 import ColorsContainer from './components/layout/ColorsContainer'
 import TextContainer from './components/layout/TextContainer'
 import Footer from './components/layout/Footer'
-import colorsData from './data/colors.json'
+import uiColorsData from './data/ui-color.json'
+import nsColorsData from './data/ns-color.json'
 import textData from './data/text.json'
 import { useAppState } from './hooks/useAppState'
 import type { ColorData } from './types'
 
 function App() {
-  const { contentType, colorType, setContentType, setColorType } = useAppState()
+  const { contentType, prefixType, setContentType, setPrefixType } = useAppState()
 
   // Filter colors by theme with proper typing
-  const lightColors = colorsData.filter((color) => color.theme === 'light') as ColorData[]
-  const darkColors = colorsData.filter((color) => color.theme === 'dark') as ColorData[]
+  const lightUiColors = uiColorsData.filter((color) => color.theme === 'light') as ColorData[]
+  const darkUiColors = uiColorsData.filter((color) => color.theme === 'dark') as ColorData[]
+
+  const lightNsColors = nsColorsData.filter((color) => color.theme === 'light') as ColorData[]
+  const darkNsColors = nsColorsData.filter((color) => color.theme === 'dark') as ColorData[]
 
   const renderContent = () => {
-    if (contentType === 'colors') {
+    if (contentType === 'ui-colors') {
       return (
         <>
-          <ColorsContainer colors={lightColors} theme="light" colorType={colorType} />
-          <ColorsContainer colors={darkColors} theme="dark" colorType={colorType} />
+          <ColorsContainer colors={lightUiColors} theme="light" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer colors={darkUiColors} theme="dark" prefixType={prefixType} contentType={contentType} />
+        </>
+      )
+    }
+    if (contentType === 'ns-colors') {
+      return (
+        <>
+          <ColorsContainer colors={lightNsColors} theme="light" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer colors={darkNsColors} theme="dark" prefixType={prefixType} contentType={contentType} />
         </>
       )
     }
@@ -52,12 +64,12 @@ function App() {
 
         <Switch
           contentType={contentType}
-          colorType={colorType}
+          prefixType={prefixType}
           onContentTypeChange={setContentType}
-          onColorTypeChange={setColorType}
+          onPrefixTypeChange={setPrefixType}
         />
 
-        <div className="theme-containers-layout [&>*]:min-w-0 mb-20">{renderContent()}</div>
+        <div className="theme-containers-layout *:min-w-0 mb-20">{renderContent()}</div>
 
         <Footer />
       </div>

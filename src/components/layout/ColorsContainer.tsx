@@ -3,7 +3,7 @@ import ColorItem from '../ui/ColorItem'
 import BGPattern from './BGPattern'
 import type { ColorsContainerProps } from '../../types'
 
-const ColorsContainer: React.FC<ColorsContainerProps> = ({ colors, theme, colorType }) => {
+const ColorsContainer: React.FC<ColorsContainerProps> = ({ colors, theme, prefixType, contentType }) => {
   const isDark = theme === 'dark'
   const bgColor = isDark ? 'bg-black' : 'bg-white'
 
@@ -13,7 +13,12 @@ const ColorsContainer: React.FC<ColorsContainerProps> = ({ colors, theme, colorT
       <div className="py-5 md:py-10 relative z-10">
         <div className="grid overflow-x-auto scrollbar-hide">
           {colors.map((color, index) => (
-            <ColorItem key={`${color.name}-${color.theme}-${index}`} color={color} colorType={colorType} />
+            <ColorItem
+              key={`${color.name}-${color.theme}-${index}`}
+              color={color}
+              prefixType={prefixType}
+              contentType={contentType}
+            />
           ))}
         </div>
       </div>

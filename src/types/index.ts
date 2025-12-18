@@ -1,17 +1,17 @@
 // Unified type definitions for the entire application
 
 // Content and color types
-export type ContentType = 'colors' | 'text'
-export type ColorType = 'none' | 'uicolor' | 'nscolor'
+export type ContentType = 'ui-colors' | 'ns-colors' | 'text'
+export type PrefixType = 'on' | 'off'
 export type Theme = 'light' | 'dark'
 
 // Storage keys
-export type StorageKey = 'CONTENT_TYPE' | 'COLOR_TYPE' | 'PREVIOUS_COLOR_TYPE'
+export type StorageKey = 'CONTENT_TYPE' | 'PREFIX_TYPE' | 'PREVIOUS_PREFIX_TYPE'
 
 export const STORAGE_KEYS: Record<StorageKey, string> = {
   CONTENT_TYPE: 'contentType',
-  COLOR_TYPE: 'colorType',
-  PREVIOUS_COLOR_TYPE: 'previousColorType',
+  PREFIX_TYPE: 'prefixType',
+  PREVIOUS_PREFIX_TYPE: 'previousPrefixType',
 } as const
 
 // Switch component types
@@ -22,9 +22,9 @@ export interface SwitchOption {
 
 export interface SwitchProps {
   contentType: ContentType
-  colorType: ColorType
+  prefixType: PrefixType
   onContentTypeChange: (type: ContentType) => void
-  onColorTypeChange: (type: ColorType) => void
+  onPrefixTypeChange: (type: PrefixType) => void
 }
 
 export interface SwitchItemProps {
@@ -51,7 +51,8 @@ export interface TextData {
 // Component prop types
 export interface ColorItemProps {
   color: ColorData
-  colorType: ColorType
+  prefixType: PrefixType
+  contentType: ContentType
 }
 
 export interface TextItemProps {
@@ -66,5 +67,6 @@ export interface HeaderProps {
 export interface ColorsContainerProps {
   colors: ColorData[]
   theme: Theme
-  colorType: ColorType
+  prefixType: PrefixType
+  contentType: ContentType
 }

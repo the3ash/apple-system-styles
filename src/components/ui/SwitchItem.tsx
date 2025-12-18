@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react'
 import type { SwitchItemProps } from '../../types'
 
 const SwitchItem: React.FC<SwitchItemProps> = ({ options, value, onChange, disabledOptions = [] }) => {
-  const [selectedId, setSelectedId] = useState(value || options[0]?.id)
+  const [selectedId, setSelectedId] = useState<string | undefined>(value)
 
   useEffect(() => {
-    if (value && value !== selectedId) {
-      setSelectedId(value)
-    }
-  }, [value, selectedId])
+    setSelectedId(value)
+  }, [value])
 
   const handleToggle = (id: string) => {
     if (disabledOptions.includes(id)) {
@@ -36,7 +34,7 @@ const SwitchItem: React.FC<SwitchItemProps> = ({ options, value, onChange, disab
                 ${selectedId === option.id ? 'bg-blue' : isDisabled ? 'bg-gray' : 'bg-gray group-hover:bg-[#ccc]'}
               `}
             />
-            <span className={`text-body ml-[6px] ${isDisabled ? 'line-through' : ''}`}>{option.label}</span>
+            <span className={`text-body ml-1.5 ${isDisabled ? 'line-through' : ''}`}>{option.label}</span>
           </div>
         )
       })}
