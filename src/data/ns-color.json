@@ -1,470 +1,698 @@
 [
   {
-    "name" : ".labelColor",
-    "hex" : "#000000d8",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.8)",
-    "theme" : "light"
+    "name": ".labelColor",
+    "hex": "#000000d8",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.8)",
+    "theme": "light"
   },
   {
-    "name" : ".labelColor",
-    "hex" : "#ffffffd8",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.8)",
-    "theme" : "dark"
+    "name": ".labelColor",
+    "hex": "#ffffffd8",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.8)",
+    "theme": "dark"
   },
   {
-    "name" : ".secondaryLabelColor",
-    "hex" : "#0000007f",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.5)",
-    "theme" : "light"
+    "name": ".secondaryLabelColor",
+    "hex": "#0000007f",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.5)",
+    "theme": "light"
   },
   {
-    "name" : ".secondaryLabelColor",
-    "hex" : "#ffffff8c",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.5)",
-    "theme" : "dark"
+    "name": ".secondaryLabelColor",
+    "hex": "#ffffff8c",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.5)",
+    "theme": "dark"
   },
   {
-    "name" : ".tertiaryLabelColor",
-    "hex" : "#00000042",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.3)",
-    "theme" : "light"
+    "name": ".tertiaryLabelColor",
+    "hex": "#00000042",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.3)",
+    "theme": "light"
   },
   {
-    "name" : ".tertiaryLabelColor",
-    "hex" : "#ffffff3f",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.2)",
-    "theme" : "dark"
+    "name": ".tertiaryLabelColor",
+    "hex": "#ffffff3f",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.2)",
+    "theme": "dark"
   },
   {
-    "name" : ".quaternaryLabelColor",
-    "hex" : "#00000019",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.1)",
-    "theme" : "light"
+    "name": ".quaternaryLabelColor",
+    "hex": "#00000019",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.1)",
+    "theme": "light"
   },
   {
-    "name" : ".quaternaryLabelColor",
-    "hex" : "#ffffff19",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.1)",
-    "theme" : "dark"
+    "name": ".quaternaryLabelColor",
+    "hex": "#ffffff19",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.1)",
+    "theme": "dark"
   },
   {
-    "name" : ".textColor",
-    "hex" : "#000000ff",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 1.0)",
-    "theme" : "light"
+    "name": ".textColor",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".textColor",
-    "hex" : "#ffffffff",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)",
-    "theme" : "dark"
+    "name": ".textColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".placeholderTextColor",
-    "hex" : "#0000007f",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.5)",
-    "theme" : "light"
+    "name": ".placeholderTextColor",
+    "hex": "#0000007f",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.5)",
+    "theme": "light"
   },
   {
-    "name" : ".placeholderTextColor",
-    "hex" : "#ffffff8c",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.5)",
-    "theme" : "dark"
+    "name": ".placeholderTextColor",
+    "hex": "#ffffff8c",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.5)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedTextColor",
-    "hex" : "#000000ff",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 1.0)",
-    "theme" : "light"
+    "name": ".selectedTextColor",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedTextColor",
-    "hex" : "#ffffffff",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)",
-    "theme" : "dark"
+    "name": ".selectedTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".textBackgroundColor",
-    "hex" : "#ffffffff",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)",
-    "theme" : "light"
+    "name": ".textBackgroundColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".textBackgroundColor",
-    "hex" : "#1e1e1eff",
-    "rgba" : "rgba(30.0, 30.0, 30.0, 1.0)",
-    "theme" : "dark"
+    "name": ".textBackgroundColor",
+    "hex": "#1e1e1eff",
+    "rgba": "rgba(30.0, 30.0, 30.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedTextBackgroundColor",
-    "hex" : "#b3d7ffff",
-    "rgba" : "rgba(179.0, 215.0, 255.0, 1.0)",
-    "theme" : "light"
+    "name": ".selectedTextBackgroundColor",
+    "hex": "#b3d7ffff",
+    "rgba": "rgba(179.0, 215.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedTextBackgroundColor",
-    "hex" : "#3f638bff",
-    "rgba" : "rgba(63.0, 99.0, 139.0, 1.0)",
-    "theme" : "dark"
+    "name": ".selectedTextBackgroundColor",
+    "hex": "#3f638bff",
+    "rgba": "rgba(63.0, 99.0, 139.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".keyboardFocusIndicatorColor",
-    "hex" : "#0067f47f",
-    "rgba" : "rgba(0.0, 103.0, 244.0, 0.5)",
-    "theme" : "light"
+    "name": ".keyboardFocusIndicatorColor",
+    "hex": "#0067f47f",
+    "rgba": "rgba(0.0, 103.0, 244.0, 0.5)",
+    "theme": "light"
   },
   {
-    "name" : ".keyboardFocusIndicatorColor",
-    "hex" : "#1aa9ff7f",
-    "rgba" : "rgba(26.0, 169.0, 255.0, 0.5)",
-    "theme" : "dark"
+    "name": ".keyboardFocusIndicatorColor",
+    "hex": "#1aa9ff7f",
+    "rgba": "rgba(26.0, 169.0, 255.0, 0.5)",
+    "theme": "dark"
   },
   {
-    "name" : ".unemphasizedSelectedTextColor",
-    "hex" : "#000000ff",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 1.0)",
-    "theme" : "light"
+    "name": ".unemphasizedSelectedTextColor",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".unemphasizedSelectedTextColor",
-    "hex" : "#ffffffff",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)",
-    "theme" : "dark"
+    "name": ".unemphasizedSelectedTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".unemphasizedSelectedTextBackgroundColor",
-    "hex" : "#dcdcdcff",
-    "rgba" : "rgba(220.0, 220.0, 220.0, 1.0)",
-    "theme" : "light"
+    "name": ".unemphasizedSelectedTextBackgroundColor",
+    "hex": "#dcdcdcff",
+    "rgba": "rgba(220.0, 220.0, 220.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".unemphasizedSelectedTextBackgroundColor",
-    "hex" : "#464646ff",
-    "rgba" : "rgba(70.0, 70.0, 70.0, 1.0)",
-    "theme" : "dark"
+    "name": ".unemphasizedSelectedTextBackgroundColor",
+    "hex": "#464646ff",
+    "rgba": "rgba(70.0, 70.0, 70.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".linkColor",
-    "hex" : "#0068daff",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 104.0, 218.0, 1.0)"
+    "name": ".linkColor",
+    "hex": "#0068daff",
+    "rgba": "rgba(0.0, 104.0, 218.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".linkColor",
-    "hex" : "#419cffff",
-    "theme" : "dark",
-    "rgba" : "rgba(65.0, 156.0, 255.0, 1.0)"
+    "name": ".linkColor",
+    "hex": "#419cffff",
+    "rgba": "rgba(65.0, 156.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".separatorColor",
-    "hex" : "#00000019",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.1)"
+    "name": ".separatorColor",
+    "hex": "#00000019",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.1)",
+    "theme": "light"
   },
   {
-    "name" : ".separatorColor",
-    "hex" : "#ffffff19",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.1)"
+    "name": ".separatorColor",
+    "hex": "#ffffff19",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.1)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedContentBackgroundColor",
-    "hex" : "#0064e1ff",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 100.0, 225.0, 1.0)"
+    "name": ".selectedContentBackgroundColor",
+    "hex": "#0064e1ff",
+    "rgba": "rgba(0.0, 100.0, 225.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedContentBackgroundColor",
-    "hex" : "#0059d1ff",
-    "theme" : "dark",
-    "rgba" : "rgba(0.0, 89.0, 209.0, 1.0)"
+    "name": ".selectedContentBackgroundColor",
+    "hex": "#0059d1ff",
+    "rgba": "rgba(0.0, 89.0, 209.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".unemphasizedSelectedContentBackgroundColor",
-    "hex" : "#dcdcdcff",
-    "theme" : "light",
-    "rgba" : "rgba(220.0, 220.0, 220.0, 1.0)"
+    "name": ".unemphasizedSelectedContentBackgroundColor",
+    "hex": "#dcdcdcff",
+    "rgba": "rgba(220.0, 220.0, 220.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".unemphasizedSelectedContentBackgroundColor",
-    "hex" : "#464646ff",
-    "theme" : "dark",
-    "rgba" : "rgba(70.0, 70.0, 70.0, 1.0)"
+    "name": ".unemphasizedSelectedContentBackgroundColor",
+    "hex": "#464646ff",
+    "rgba": "rgba(70.0, 70.0, 70.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedMenuItemTextColor",
-    "hex" : "#ffffffff",
-    "theme" : "light",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".selectedMenuItemTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedMenuItemTextColor",
-    "hex" : "#ffffffff",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".selectedMenuItemTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".gridColor",
-    "hex" : "#e6e6e6ff",
-    "theme" : "light",
-    "rgba" : "rgba(230.0, 230.0, 230.0, 1.0)"
+    "name": ".gridColor",
+    "hex": "#e6e6e6ff",
+    "rgba": "rgba(230.0, 230.0, 230.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".gridColor",
-    "hex" : "#1a1a1aff",
-    "theme" : "dark",
-    "rgba" : "rgba(26.0, 26.0, 26.0, 1.0)"
+    "name": ".gridColor",
+    "hex": "#1a1a1aff",
+    "rgba": "rgba(26.0, 26.0, 26.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".headerTextColor",
-    "hex" : "#000000d8",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.8)"
+    "name": ".headerTextColor",
+    "hex": "#000000d8",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.8)",
+    "theme": "light"
   },
   {
-    "name" : ".headerTextColor",
-    "hex" : "#ffffffff",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".headerTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".controlAccentColor",
-    "hex" : "#007affff",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 122.0, 255.0, 1.0)"
+    "name": ".alternatingContentBackgroundColor[0]",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".controlAccentColor",
-    "hex" : "#007affff",
-    "theme" : "dark",
-    "rgba" : "rgba(0.0, 122.0, 255.0, 1.0)"
+    "name": ".alternatingContentBackgroundColor[0]",
+    "hex": "#1e1e1eff",
+    "rgba": "rgba(30.0, 30.0, 30.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".controlColor",
-    "hex" : "#ffffffff",
-    "theme" : "light",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".alternatingContentBackgroundColor[1]",
+    "hex": "#f4f5f5ff",
+    "rgba": "rgba(244.0, 245.0, 245.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".controlColor",
-    "hex" : "#ffffff3f",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.2)"
+    "name": ".alternatingContentBackgroundColor[1]",
+    "hex": "#ffffff0c",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".controlBackgroundColor",
-    "hex" : "#ffffffff",
-    "theme" : "light",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".controlAccentColor",
+    "hex": "#007affff",
+    "rgba": "rgba(0.0, 122.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".controlBackgroundColor",
-    "hex" : "#1e1e1eff",
-    "theme" : "dark",
-    "rgba" : "rgba(30.0, 30.0, 30.0, 1.0)"
+    "name": ".controlAccentColor",
+    "hex": "#007affff",
+    "rgba": "rgba(0.0, 122.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".controlTextColor",
-    "hex" : "#000000d8",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.8)"
+    "name": ".controlColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".controlTextColor",
-    "hex" : "#ffffffd8",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.8)"
+    "name": ".controlColor",
+    "hex": "#ffffff3f",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.2)",
+    "theme": "dark"
   },
   {
-    "name" : ".disabledControlTextColor",
-    "hex" : "#0000003f",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.2)"
+    "name": ".controlBackgroundColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".disabledControlTextColor",
-    "hex" : "#ffffff3f",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.2)"
+    "name": ".controlBackgroundColor",
+    "hex": "#1e1e1eff",
+    "rgba": "rgba(30.0, 30.0, 30.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedControlColor",
-    "hex" : "#b3d7ffff",
-    "theme" : "light",
-    "rgba" : "rgba(179.0, 215.0, 255.0, 1.0)"
+    "name": ".controlTextColor",
+    "hex": "#000000d8",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.8)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedControlColor",
-    "hex" : "#3f638bff",
-    "theme" : "dark",
-    "rgba" : "rgba(63.0, 99.0, 139.0, 1.0)"
+    "name": ".controlTextColor",
+    "hex": "#ffffffd8",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.8)",
+    "theme": "dark"
   },
   {
-    "name" : ".selectedControlTextColor",
-    "hex" : "#000000d8",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.8)"
+    "name": ".disabledControlTextColor",
+    "hex": "#0000003f",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.2)",
+    "theme": "light"
   },
   {
-    "name" : ".selectedControlTextColor",
-    "hex" : "#ffffffd8",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.8)"
+    "name": ".disabledControlTextColor",
+    "hex": "#ffffff3f",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.2)",
+    "theme": "dark"
   },
   {
-    "name" : ".alternateSelectedControlTextColor",
-    "hex" : "#ffffffff",
-    "theme" : "light",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".selectedControlColor",
+    "hex": "#b3d7ffff",
+    "rgba": "rgba(179.0, 215.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".alternateSelectedControlTextColor",
-    "hex" : "#ffffffff",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".selectedControlColor",
+    "hex": "#3f638bff",
+    "rgba": "rgba(63.0, 99.0, 139.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".windowBackgroundColor",
-    "hex" : "#ffffffff",
-    "theme" : "light",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)"
+    "name": ".selectedControlTextColor",
+    "hex": "#000000d8",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.8)",
+    "theme": "light"
   },
   {
-    "name" : ".windowBackgroundColor",
-    "hex" : "#1e1e1eff",
-    "theme" : "dark",
-    "rgba" : "rgba(30.0, 30.0, 30.0, 1.0)"
+    "name": ".selectedControlTextColor",
+    "hex": "#ffffffd8",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.8)",
+    "theme": "dark"
   },
   {
-    "name" : ".windowFrameTextColor",
-    "hex" : "#000000d8",
-    "theme" : "light",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.8)"
+    "name": ".alternateSelectedControlTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".windowFrameTextColor",
-    "hex" : "#ffffffd8",
-    "theme" : "dark",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.8)"
+    "name": ".alternateSelectedControlTextColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".underPageBackgroundColor",
-    "hex" : "#969696e5",
-    "theme" : "light",
-    "rgba" : "rgba(150.0, 150.0, 150.0, 0.9)"
+    "name": ".windowBackgroundColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".underPageBackgroundColor",
-    "hex" : "#282828ff",
-    "theme" : "dark",
-    "rgba" : "rgba(40.0, 40.0, 40.0, 1.0)"
+    "name": ".windowBackgroundColor",
+    "hex": "#1e1e1eff",
+    "rgba": "rgba(30.0, 30.0, 30.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".findHighlightColor",
-    "hex" : "#ffff00ff",
-    "rgba" : "rgba(255.0, 255.0, 0.0, 1.0)",
-    "theme" : "light"
+    "name": ".windowFrameTextColor",
+    "hex": "#000000d8",
+    "rgba": "rgba(0.0, 0.0, 0.0, 0.8)",
+    "theme": "light"
   },
   {
-    "name" : ".findHighlightColor",
-    "hex" : "#ffff00ff",
-    "rgba" : "rgba(255.0, 255.0, 0.0, 1.0)",
-    "theme" : "dark"
+    "name": ".windowFrameTextColor",
+    "hex": "#ffffffd8",
+    "rgba": "rgba(255.0, 255.0, 255.0, 0.8)",
+    "theme": "dark"
   },
   {
-    "name" : ".highlightColor",
-    "hex" : "#ffffffff",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 1.0)",
-    "theme" : "light"
+    "name": ".underPageBackgroundColor",
+    "hex": "#969696e5",
+    "rgba": "rgba(150.0, 150.0, 150.0, 0.9)",
+    "theme": "light"
   },
   {
-    "name" : ".highlightColor",
-    "hex" : "#b4b4b4ff",
-    "rgba" : "rgba(180.0, 180.0, 180.0, 1.0)",
-    "theme" : "dark"
+    "name": ".underPageBackgroundColor",
+    "hex": "#282828ff",
+    "rgba": "rgba(40.0, 40.0, 40.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".shadowColor",
-    "hex" : "#000000ff",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 1.0)",
-    "theme" : "light"
+    "name": ".findHighlightColor",
+    "hex": "#ffff00ff",
+    "rgba": "rgba(255.0, 255.0, 0.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".shadowColor",
-    "hex" : "#000000ff",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 1.0)",
-    "theme" : "dark"
+    "name": ".findHighlightColor",
+    "hex": "#ffff00ff",
+    "rgba": "rgba(255.0, 255.0, 0.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".quaternarySystemFill",
-    "hex" : "#00000007",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.0)",
-    "theme" : "light"
+    "name": ".highlightColor",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".quaternarySystemFill",
-    "hex" : "#ffffff07",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.0)",
-    "theme" : "dark"
+    "name": ".highlightColor",
+    "hex": "#b4b4b4ff",
+    "rgba": "rgba(180.0, 180.0, 180.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".quinarySystemFill",
-    "hex" : "#00000002",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.0)",
-    "theme" : "light"
+    "name": ".shadowColor",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".quinarySystemFill",
-    "hex" : "#ffffff02",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.0)",
-    "theme" : "dark"
+    "name": ".shadowColor",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".secondarySystemFill",
-    "hex" : "#00000014",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.1)",
-    "theme" : "light"
+    "name": ".systemBlue",
+    "hex": "#0088ffff",
+    "rgba": "rgba(0.0, 136.0, 255.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".secondarySystemFill",
-    "hex" : "#ffffff14",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.1)",
-    "theme" : "dark"
+    "name": ".systemBlue",
+    "hex": "#0091ffff",
+    "rgba": "rgba(0.0, 145.0, 255.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".systemFill",
-    "hex" : "#00000019",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.1)",
-    "theme" : "light"
+    "name": ".systemBrown",
+    "hex": "#ac7f5eff",
+    "rgba": "rgba(172.0, 127.0, 94.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".systemFill",
-    "hex" : "#ffffff19",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.1)",
-    "theme" : "dark"
+    "name": ".systemBrown",
+    "hex": "#b78a66ff",
+    "rgba": "rgba(183.0, 138.0, 102.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".tertiarySystemFill",
-    "hex" : "#0000000c",
-    "rgba" : "rgba(0.0, 0.0, 0.0, 0.0)",
-    "theme" : "light"
+    "name": ".systemGray",
+    "hex": "#8e8e93ff",
+    "rgba": "rgba(142.0, 142.0, 147.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".tertiarySystemFill",
-    "hex" : "#ffffff0c",
-    "rgba" : "rgba(255.0, 255.0, 255.0, 0.0)",
-    "theme" : "dark"
+    "name": ".systemGray",
+    "hex": "#98989dff",
+    "rgba": "rgba(152.0, 152.0, 157.0, 1.0)",
+    "theme": "dark"
   },
   {
-    "name" : ".textInsertionPointColor",
-    "hex" : "#007affff",
-    "rgba" : "rgba(0.0, 122.0, 255.0, 1.0)",
-    "theme" : "light"
+    "name": ".systemGreen",
+    "hex": "#34c759ff",
+    "rgba": "rgba(52.0, 199.0, 89.0, 1.0)",
+    "theme": "light"
   },
   {
-    "name" : ".textInsertionPointColor",
-    "hex" : "#007affff",
-    "rgba" : "rgba(0.0, 122.0, 255.0, 1.0)",
-    "theme" : "dark"
+    "name": ".systemGreen",
+    "hex": "#30d158ff",
+    "rgba": "rgba(48.0, 209.0, 88.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".systemOrange",
+    "hex": "#ff8d28ff",
+    "rgba": "rgba(255.0, 141.0, 40.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".systemOrange",
+    "hex": "#ff9230ff",
+    "rgba": "rgba(255.0, 146.0, 48.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".systemPink",
+    "hex": "#ff2d55ff",
+    "rgba": "rgba(255.0, 45.0, 85.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".systemPink",
+    "hex": "#ff375fff",
+    "rgba": "rgba(255.0, 55.0, 95.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".systemPurple",
+    "hex": "#cb30e0ff",
+    "rgba": "rgba(203.0, 48.0, 224.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".systemPurple",
+    "hex": "#db34f2ff",
+    "rgba": "rgba(219.0, 52.0, 242.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".systemRed",
+    "hex": "#ff383cff",
+    "rgba": "rgba(255.0, 56.0, 60.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".systemRed",
+    "hex": "#ff4245ff",
+    "rgba": "rgba(255.0, 66.0, 69.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".systemYellow",
+    "hex": "#ffcc00ff",
+    "rgba": "rgba(255.0, 204.0, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".systemYellow",
+    "hex": "#ffd600ff",
+    "rgba": "rgba(255.0, 214.0, 0.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".black",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".black",
+    "hex": "#000000ff",
+    "rgba": "rgba(0.0, 0.0, 0.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".blue",
+    "hex": "#0000ffff",
+    "rgba": "rgba(0.0, 0.0, 255.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".blue",
+    "hex": "#0000ffff",
+    "rgba": "rgba(0.0, 0.0, 255.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".brown",
+    "hex": "#996633ff",
+    "rgba": "rgba(153.0, 102.0, 51.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".brown",
+    "hex": "#996633ff",
+    "rgba": "rgba(153.0, 102.0, 51.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".cyan",
+    "hex": "#00ffffff",
+    "rgba": "rgba(0.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".cyan",
+    "hex": "#00ffffff",
+    "rgba": "rgba(0.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".darkGray",
+    "hex": "#555555ff",
+    "rgba": "rgba(85.0, 85.0, 85.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".darkGray",
+    "hex": "#555555ff",
+    "rgba": "rgba(85.0, 85.0, 85.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".gray",
+    "hex": "#808080ff",
+    "rgba": "rgba(127.5, 127.5, 127.5, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".gray",
+    "hex": "#808080ff",
+    "rgba": "rgba(127.5, 127.5, 127.5, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".green",
+    "hex": "#00ff00ff",
+    "rgba": "rgba(0.0, 255.0, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".green",
+    "hex": "#00ff00ff",
+    "rgba": "rgba(0.0, 255.0, 0.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".lightGray",
+    "hex": "#aaaaaaff",
+    "rgba": "rgba(170.0, 170.0, 170.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".lightGray",
+    "hex": "#aaaaaaff",
+    "rgba": "rgba(170.0, 170.0, 170.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".magenta",
+    "hex": "#ff00ffff",
+    "rgba": "rgba(255.0, 0.0, 255.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".magenta",
+    "hex": "#ff00ffff",
+    "rgba": "rgba(255.0, 0.0, 255.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".orange",
+    "hex": "#ff8000ff",
+    "rgba": "rgba(255.0, 127.5, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".orange",
+    "hex": "#ff8000ff",
+    "rgba": "rgba(255.0, 127.5, 0.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".purple",
+    "hex": "#800080ff",
+    "rgba": "rgba(127.5, 0.0, 127.5, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".purple",
+    "hex": "#800080ff",
+    "rgba": "rgba(127.5, 0.0, 127.5, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".red",
+    "hex": "#ff0000ff",
+    "rgba": "rgba(255.0, 0.0, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".red",
+    "hex": "#ff0000ff",
+    "rgba": "rgba(255.0, 0.0, 0.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".white",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".white",
+    "hex": "#ffffffff",
+    "rgba": "rgba(255.0, 255.0, 255.0, 1.0)",
+    "theme": "dark"
+  },
+  {
+    "name": ".yellow",
+    "hex": "#ffff00ff",
+    "rgba": "rgba(255.0, 255.0, 0.0, 1.0)",
+    "theme": "light"
+  },
+  {
+    "name": ".yellow",
+    "hex": "#ffff00ff",
+    "rgba": "rgba(255.0, 255.0, 0.0, 1.0)",
+    "theme": "dark"
   }
 ]
