@@ -14,7 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@proj-airi/font-departure-mono": "0.7.2-beta.2",
+    "@proj-airi/font-departure-mono": "0.8.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
