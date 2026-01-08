@@ -51,7 +51,7 @@ const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
       onClick={handleClick}
     >
       {/* Color swatch with background layer */}
-      <div className="flex items-center justify-center w-9 h-[42px]">
+      <div className="flex items-center justify-center w-9 h-10.5">
         <div className="relative w-9 h-9">
           <div className="absolute inset-0 w-9 h-9" style={backgroundLayerStyle} />
           <div className="absolute inset-0 w-9 h-9" style={swatchStyle} />

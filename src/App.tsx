@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="min-h-screen font-mono mx-auto px-4 md:px-7 py-16">
-      <div className="max-w-[1080px] mx-auto">
+      <div className="max-w-270 mx-auto">
         <Header
           title="Apple System Styles"
           description={
@@ -53,7 +53,7 @@ function App() {
                   href="https://github.com/the3ash/apple-system-styles"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white hover:bg-black transition-all ease-out duration-100"
+                  className="hover:text-white hover:bg-blue transition-all ease-out duration-100"
                 >
                   [GitHub ↱]
                 </a>
