@@ -8,7 +8,7 @@ updates:
       day: 'monday'
       time: '09:00'
     # Allow automatic merging of non-major version updates
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 10
     allow:
       - dependency-type: 'all'
     assignees:
@@ -52,13 +52,6 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-      tailwind:
-        patterns:
-          - 'tailwindcss*'
-          - '@tailwindcss/*'
-        update-types:
-          - 'minor'
-          - 'patch'
       prettier:
         patterns:
           - 'prettier*'
@@ -67,6 +60,7 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
+      # Catch-all group for everything else
       other-deps:
         patterns:
           - '*'
@@ -80,8 +74,6 @@ updates:
           - 'typescript*'
           - '@types/*'
           - 'typescript-*'
-          - 'tailwindcss*'
-          - '@tailwindcss/*'
           - 'prettier*'
         update-types:
           - 'minor'
@@ -94,9 +86,9 @@ updates:
       interval: 'weekly'
       day: 'monday'
       time: '09:00'
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 10
     assignees:
-      - '3ash'
+      - 'the3ash'
     commit-message:
       prefix: 'github-actions'
       include: 'scope'
