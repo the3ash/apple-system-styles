@@ -3,7 +3,12 @@ import ColorItem from '../ui/ColorItem'
 import BGPattern from './BGPattern'
 import type { ColorsContainerProps } from '../../types'
 
-const ColorsContainer: React.FC<ColorsContainerProps> = ({ colors, theme, prefixType, contentType }) => {
+const ColorsContainer: React.FC<ColorsContainerProps> = ({
+  colors,
+  theme,
+  prefixType,
+  contentType,
+}) => {
   const isDark = theme === 'dark'
   const bgColor = isDark ? 'bg-black' : 'bg-white'
 

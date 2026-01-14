@@ -23,16 +23,36 @@ function App() {
     if (contentType === 'ui-colors') {
       return (
         <>
-          <ColorsContainer colors={lightUiColors} theme="light" prefixType={prefixType} contentType={contentType} />
-          <ColorsContainer colors={darkUiColors} theme="dark" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer
+            colors={lightUiColors}
+            theme="light"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
+          <ColorsContainer
+            colors={darkUiColors}
+            theme="dark"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
         </>
       )
     }
     if (contentType === 'ns-colors') {
       return (
         <>
-          <ColorsContainer colors={lightNsColors} theme="light" prefixType={prefixType} contentType={contentType} />
-          <ColorsContainer colors={darkNsColors} theme="dark" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer
+            colors={lightNsColors}
+            theme="light"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
+          <ColorsContainer
+            colors={darkNsColors}
+            theme="dark"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
         </>
       )
     }

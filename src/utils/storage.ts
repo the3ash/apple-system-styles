@@ -9,7 +9,7 @@ export const storage = {
     try {
       const item = localStorage.getItem(key)
       if (!item) return defaultValue
-      
+
       const parsed = JSON.parse(item)
       return parsed ?? defaultValue
     } catch (error) {
