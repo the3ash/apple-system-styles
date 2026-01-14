@@ -20,6 +20,14 @@
   ::selection {
     @apply bg-blue text-white;
   }
+
+  :focus:not(:focus-visible) {
+    @apply outline-none;
+  }
+
+  :focus-visible {
+    @apply outline-[1.5px] outline-blue;
+  }
 }
 
 @layer components {
