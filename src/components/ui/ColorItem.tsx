@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState, useMemo, memo } from 'react'
 import type { ColorItemProps } from '../../types'
 import { copyText } from '../../utils/clipboard'
 
-const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
+const ColorItem = memo(({ color, prefixType, contentType }: ColorItemProps) => {
   const [showCheckmark, setShowCheckmark] = useState(false)
 
-  const displayName = (() => {
+  const displayName = useMemo(() => {
     const cleanName = color.name.startsWith('.') ? color.name.slice(1) : color.name
 
     if (prefixType === 'off') {
@@ -21,7 +21,7 @@ const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
     }
 
     return color.name
-  })()
+  }, [color.name, prefixType, contentType])
 
   const handleClick = async () => {
     const success = await copyText(displayName)
@@ -34,17 +34,22 @@ const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
   const textColorClass = color.theme === 'dark' ? 'text-white' : 'text-black'
   const needsBorder =
     color.theme === 'light' && (color.hex === '#ffffffff' || color.hex === '#ffffff99')
-  const backgroundLayerColor = color.theme === 'dark' ? '#000000' : '#ffffff'
   const hoverBgColor = color.theme === 'dark' ? 'hover:bg-[#222]' : 'hover:bg-black/4'
 
-  const swatchStyle = {
-    backgroundColor: color.hex,
-    border: needsBorder ? `0.5px solid #ddd` : 'none',
-  }
+  const swatchStyle = useMemo(
+    () => ({
+      backgroundColor: color.hex,
+      border: needsBorder ? `0.5px solid #ddd` : 'none',
+    }),
+    [color.hex, needsBorder]
+  )
 
-  const backgroundLayerStyle = {
-    backgroundColor: backgroundLayerColor,
-  }
+  const backgroundLayerStyle = useMemo(
+    () => ({
+      backgroundColor: color.theme === 'dark' ? '#000000' : '#ffffff',
+    }),
+    [color.theme]
+  )
 
   return (
     <div
@@ -75,6 +80,6 @@ const ColorItem = ({ color, prefixType, contentType }: ColorItemProps) => {
       </div>
     </div>
   )
-}
+})
 
 export default ColorItem

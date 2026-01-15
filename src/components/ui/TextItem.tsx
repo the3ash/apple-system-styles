@@ -1,6 +1,6 @@
 import type { TextItemProps } from '../../types'
 import Border from './Border'
-import { useState } from 'react'
+import { useState, memo } from 'react'
 import { copyText } from '../../utils/clipboard'
 
 const TITLE_MAPPING: Record<string, string> = {
@@ -9,7 +9,7 @@ const TITLE_MAPPING: Record<string, string> = {
   title3: 'Title 3',
 }
 
-const TextItem = ({ text }: TextItemProps) => {
+const TextItem = memo(({ text }: TextItemProps) => {
   const [copied, setCopied] = useState(false)
 
   const formatTitle = (name: string): string => {
@@ -57,6 +57,6 @@ const TextItem = ({ text }: TextItemProps) => {
       <Border className="px-6 md:px-14" />
     </div>
   )
-}
+})
 
 export default TextItem
