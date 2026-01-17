@@ -12,9 +12,7 @@ export default defineConfig({
       transformIndexHtml(html, ctx) {
         if (!ctx.bundle) return html
 
-        const fontFile = Object.keys(ctx.bundle).find(
-          (key) => key.includes('DepartureMono') && key.endsWith('.otf')
-        )
+        const fontFile = Object.keys(ctx.bundle).find((key) => key.includes('DepartureMono') && key.endsWith('.otf'))
 
         if (fontFile) {
           const preloadTag = `<link rel="preload" href="/${fontFile}" as="font" type="font/otf" crossorigin>`

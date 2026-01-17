@@ -32,8 +32,7 @@ const ColorItem = memo(({ color, prefixType, contentType }: ColorItemProps) => {
   }
 
   const textColorClass = color.theme === 'dark' ? 'text-white' : 'text-black'
-  const needsBorder =
-    color.theme === 'light' && (color.hex === '#ffffffff' || color.hex === '#ffffff99')
+  const needsBorder = color.theme === 'light' && (color.hex === '#ffffffff' || color.hex === '#ffffff99')
   const hoverBgColor = color.theme === 'dark' ? 'hover:bg-[#222]' : 'hover:bg-black/4'
 
   const swatchStyle = useMemo(

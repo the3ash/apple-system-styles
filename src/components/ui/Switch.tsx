@@ -2,12 +2,7 @@ import React from 'react'
 import SwitchItem from './SwitchItem'
 import type { SwitchProps, ContentType, PrefixType } from '../../types'
 
-const Switch: React.FC<SwitchProps> = ({
-  contentType,
-  prefixType,
-  onContentTypeChange,
-  onPrefixTypeChange,
-}) => {
+const Switch: React.FC<SwitchProps> = ({ contentType, prefixType, onContentTypeChange, onPrefixTypeChange }) => {
   return (
     <div className="flex flex-col sm:flex-row justify-between items-center gap-0 mb-4">
       <SwitchItem
@@ -28,9 +23,7 @@ const Switch: React.FC<SwitchProps> = ({
           ]}
           value={prefixType}
           onChange={
-            contentType === 'text'
-              ? undefined
-              : (selectedId: string) => onPrefixTypeChange(selectedId as PrefixType)
+            contentType === 'text' ? undefined : (selectedId: string) => onPrefixTypeChange(selectedId as PrefixType)
           }
           disabledOptions={contentType === 'text' ? ['on', 'off'] : []}
         />

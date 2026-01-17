@@ -14,58 +14,26 @@ function App() {
   const { contentType, prefixType, setContentType, setPrefixType } = useAppState()
 
   // Filter colors by theme with proper typing - memoized since data is static
-  const lightUiColors = useMemo(
-    () => uiColorsData.filter((color) => color.theme === 'light') as ColorData[],
-    []
-  )
-  const darkUiColors = useMemo(
-    () => uiColorsData.filter((color) => color.theme === 'dark') as ColorData[],
-    []
-  )
+  const lightUiColors = useMemo(() => uiColorsData.filter((color) => color.theme === 'light') as ColorData[], [])
+  const darkUiColors = useMemo(() => uiColorsData.filter((color) => color.theme === 'dark') as ColorData[], [])
 
-  const lightNsColors = useMemo(
-    () => nsColorsData.filter((color) => color.theme === 'light') as ColorData[],
-    []
-  )
-  const darkNsColors = useMemo(
-    () => nsColorsData.filter((color) => color.theme === 'dark') as ColorData[],
-    []
-  )
+  const lightNsColors = useMemo(() => nsColorsData.filter((color) => color.theme === 'light') as ColorData[], [])
+  const darkNsColors = useMemo(() => nsColorsData.filter((color) => color.theme === 'dark') as ColorData[], [])
 
   const renderContent = () => {
     if (contentType === 'ui-colors') {
       return (
         <>
-          <ColorsContainer
-            colors={lightUiColors}
-            theme="light"
-            prefixType={prefixType}
-            contentType={contentType}
-          />
-          <ColorsContainer
-            colors={darkUiColors}
-            theme="dark"
-            prefixType={prefixType}
-            contentType={contentType}
-          />
+          <ColorsContainer colors={lightUiColors} theme="light" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer colors={darkUiColors} theme="dark" prefixType={prefixType} contentType={contentType} />
         </>
       )
     }
     if (contentType === 'ns-colors') {
       return (
         <>
-          <ColorsContainer
-            colors={lightNsColors}
-            theme="light"
-            prefixType={prefixType}
-            contentType={contentType}
-          />
-          <ColorsContainer
-            colors={darkNsColors}
-            theme="dark"
-            prefixType={prefixType}
-            contentType={contentType}
-          />
+          <ColorsContainer colors={lightNsColors} theme="light" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer colors={darkNsColors} theme="dark" prefixType={prefixType} contentType={contentType} />
         </>
       )
     }
