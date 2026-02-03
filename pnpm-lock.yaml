@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@proj-airi/font-departure-mono':
-        specifier: 0.8.1
-        version: 0.8.1
+        specifier: 0.8.4
+        version: 0.8.4
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -49,8 +49,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(eslint@9.39.2(jiti@2.6.1))
       globals:
-        specifier: ^17.1.0
-        version: 17.1.0
+        specifier: ^17.3.0
+        version: 17.3.0
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
@@ -433,8 +433,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@proj-airi/font-departure-mono@0.8.1':
-    resolution: {integrity: sha512-EHqr5WfXm+xBRR/DysOv1tmnFfLdXJuctk1yQbtL4dfwNqn7kaiATEkSeNAEdT4sKAHZIQvcHIEo/4bCwMMN+w==}
+  '@proj-airi/font-departure-mono@0.8.4':
+    resolution: {integrity: sha512-9MU/Kw6pJjgPA5unSdvbwpkLm0UUppTYTkZLH5ZJp3WyQgWWUrWoDaUH1kvdhamCOEN1yZGUvn+Zb+yivNf/mQ==}
 
   '@rolldown/pluginutils@1.0.0-rc.2':
     resolution: {integrity: sha512-izyXV/v+cHiRfozX62W9htOAvwMo4/bXKDrQ+vom1L1qRuexPock/7VZDAhnpHCLNejd3NJ6hiab+tO0D44Rgw==}
@@ -976,8 +976,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.1.0:
-    resolution: {integrity: sha512-8HoIcWI5fCvG5NADj4bDav+er9B9JMj2vyL2pI8D0eismKyUvPLTSs+Ln3wqhwcp306i73iyVnEKx3F6T47TGw==}
+  globals@17.3.0:
+    resolution: {integrity: sha512-yMqGUQVVCkD4tqjOJf3TnrvaaHDMYp4VlUSObbkIiuCPe/ofdMBFIAcBbCSRFWOnos6qRiTVStDwqPLUclaxIw==}
     engines: {node: '>=18'}
 
   graceful-fs@4.2.11:
@@ -1740,7 +1740,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@proj-airi/font-departure-mono@0.8.1': {}
+  '@proj-airi/font-departure-mono@0.8.4': {}
 
   '@rolldown/pluginutils@1.0.0-rc.2': {}
 
@@ -2273,7 +2273,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.1.0: {}
+  globals@17.3.0: {}
 
   graceful-fs@4.2.11: {}
 
