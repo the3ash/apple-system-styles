@@ -1,9 +1,15 @@
-@import '@proj-airi/font-departure-mono';
 @import 'tailwindcss';
+
+@font-face {
+  font-family: d;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/d.woff2') format('woff2');
+}
 
 @theme {
   --font-sans: -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'Departure Mono', monospace;
+  --font-mono: d, monospace;
 
   --color-blue: #0000ff;
   --color-gray: #ddd;
@@ -26,7 +32,7 @@
   }
 
   :focus-visible {
-    @apply outline-[1.5px] outline-blue;
+    @apply outline-blue outline-[1.5px];
   }
 }
 
@@ -92,7 +98,7 @@
     }
 
     .color-hex-margin-small {
-      @apply ml-0 mt-1;
+      @apply mt-1 ml-0;
     }
   }
 

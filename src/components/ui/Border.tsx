@@ -8,11 +8,12 @@ const Border: React.FC<BorderProps> = ({
   return (
     <div className={className}>
       <div
-        className="w-full border-b border-gray"
+        className="border-gray w-full border-b"
         style={{
           borderStyle: 'dashed',
           borderWidth: '0 0 1px 0',
-          borderImage: 'repeating-linear-gradient(to right, #ddd 0, #ddd 4px, transparent 4px, transparent 8px) 1',
+          borderImage:
+            'repeating-linear-gradient(to right, #ddd 0, #ddd 4px, transparent 4px, transparent 8px) 1',
         }}
       ></div>
     </div>

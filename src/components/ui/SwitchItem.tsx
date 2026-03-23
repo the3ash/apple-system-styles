@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import type { SwitchItemProps } from '../../types'
 
-const SwitchItem: React.FC<SwitchItemProps> = ({ options, value, onChange, disabledOptions = [] }) => {
+const SwitchItem: React.FC<SwitchItemProps> = ({
+  options,
+  value,
+  onChange,
+  disabledOptions = [],
+}) => {
   const [selectedId, setSelectedId] = useState<string | undefined>(value)
 
   useEffect(() => {
@@ -23,18 +28,17 @@ const SwitchItem: React.FC<SwitchItemProps> = ({ options, value, onChange, disab
         return (
           <div
             key={option.id}
-            className={`inline-flex items-center py-2 px-0.5 group ${index > 0 ? 'ml-2.5' : ''} ${
+            className={`group inline-flex items-center px-0.5 py-2 ${index > 0 ? 'ml-2.5' : ''} ${
               isDisabled ? 'cursor-not-allowed' : 'cursor-pointer'
             }`}
             onClick={() => handleToggle(option.id)}
           >
             <div
-              className={`
-                w-2.5 h-2.5 transition-colors ease-out duration-100
-                ${selectedId === option.id ? 'bg-blue' : isDisabled ? 'bg-gray' : 'bg-gray group-hover:bg-[#ccc]'}
-              `}
+              className={`h-2.5 w-2.5 transition-colors duration-100 ease-out ${selectedId === option.id ? 'bg-blue' : isDisabled ? 'bg-gray' : 'bg-gray group-hover:bg-[#ccc]'} `}
             />
-            <span className={`text-body ml-1.5 ${isDisabled ? 'line-through' : ''}`}>{option.label}</span>
+            <span className={`text-body ml-1.5 ${isDisabled ? 'line-through' : ''}`}>
+              {option.label}
+            </span>
           </div>
         )
       })}

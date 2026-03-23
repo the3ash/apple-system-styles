@@ -14,26 +14,58 @@ function App() {
   const { contentType, prefixType, setContentType, setPrefixType } = useAppState()
 
   // Filter colors by theme with proper typing - memoized since data is static
-  const lightUiColors = useMemo(() => uiColorsData.filter((color) => color.theme === 'light') as ColorData[], [])
-  const darkUiColors = useMemo(() => uiColorsData.filter((color) => color.theme === 'dark') as ColorData[], [])
+  const lightUiColors = useMemo(
+    () => uiColorsData.filter((color) => color.theme === 'light') as ColorData[],
+    [],
+  )
+  const darkUiColors = useMemo(
+    () => uiColorsData.filter((color) => color.theme === 'dark') as ColorData[],
+    [],
+  )
 
-  const lightNsColors = useMemo(() => nsColorsData.filter((color) => color.theme === 'light') as ColorData[], [])
-  const darkNsColors = useMemo(() => nsColorsData.filter((color) => color.theme === 'dark') as ColorData[], [])
+  const lightNsColors = useMemo(
+    () => nsColorsData.filter((color) => color.theme === 'light') as ColorData[],
+    [],
+  )
+  const darkNsColors = useMemo(
+    () => nsColorsData.filter((color) => color.theme === 'dark') as ColorData[],
+    [],
+  )
 
   const renderContent = () => {
     if (contentType === 'ui-colors') {
       return (
         <>
-          <ColorsContainer colors={lightUiColors} theme="light" prefixType={prefixType} contentType={contentType} />
-          <ColorsContainer colors={darkUiColors} theme="dark" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer
+            colors={lightUiColors}
+            theme="light"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
+          <ColorsContainer
+            colors={darkUiColors}
+            theme="dark"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
         </>
       )
     }
     if (contentType === 'ns-colors') {
       return (
         <>
-          <ColorsContainer colors={lightNsColors} theme="light" prefixType={prefixType} contentType={contentType} />
-          <ColorsContainer colors={darkNsColors} theme="dark" prefixType={prefixType} contentType={contentType} />
+          <ColorsContainer
+            colors={lightNsColors}
+            theme="light"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
+          <ColorsContainer
+            colors={darkNsColors}
+            theme="dark"
+            prefixType={prefixType}
+            contentType={contentType}
+          />
         </>
       )
     }
@@ -41,8 +73,8 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen font-mono mx-auto px-4 md:px-7 py-16">
-      <div className="max-w-270 mx-auto">
+    <div className="mx-auto min-h-screen px-4 py-16 font-mono md:px-7">
+      <div className="mx-auto max-w-270">
         <Header
           title="Apple System Styles"
           description={
@@ -54,7 +86,7 @@ function App() {
                   href="https://github.com/the3ash/apple-system-styles"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white hover:bg-blue transition-all ease-out duration-100"
+                  className="hover:bg-blue transition-all duration-100 ease-out hover:text-white"
                 >
                   [GitHub ↱]
                 </a>
@@ -70,7 +102,7 @@ function App() {
           onPrefixTypeChange={setPrefixType}
         />
 
-        <div className="theme-containers-layout *:min-w-0 mb-20">{renderContent()}</div>
+        <div className="theme-containers-layout mb-20 *:min-w-0">{renderContent()}</div>
 
         <Footer />
       </div>

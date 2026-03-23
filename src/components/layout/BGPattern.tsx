@@ -5,7 +5,7 @@ const BGPattern: React.FC = () => {
 
   return (
     <div
-      className="absolute inset-0 pointer-events-none"
+      className="pointer-events-none absolute inset-0"
       style={{
         backgroundImage: `url("${svgPattern}")`,
         backgroundRepeat: 'repeat',

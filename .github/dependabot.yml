@@ -24,18 +24,15 @@ updates:
         update-types: ['minor', 'patch']
       # CSS frameworks
       tailwind:
-        patterns: ['tailwindcss', '@tailwindcss/*', 'prettier-plugin-tailwindcss']
+        patterns: ['tailwindcss', '@tailwindcss/*']
         update-types: ['minor', 'patch']
       # Routing
       routing:
         patterns: ['react-router*']
         update-types: ['minor', 'patch']
       # Code quality tools
-      eslint:
-        patterns: ['eslint', 'eslint-*', '@eslint/*', '@typescript-eslint/*']
-        update-types: ['minor', 'patch']
-      prettier:
-        patterns: ['prettier', 'prettier-*', 'eslint-config-prettier']
+      oxc:
+        patterns: ['oxfmt', 'oxlint', '@oxlint/*']
         update-types: ['minor', 'patch']
       # TypeScript
       typescript:
@@ -48,9 +45,10 @@ updates:
           - 'react*'
           - 'vite*'
           - 'tailwind*'
-          - 'eslint*'
+          - 'oxfmt'
+          - 'oxlint'
+          - '@oxlint/*'
           - 'typescript*'
-          - 'prettier*'
         update-types: ['minor', 'patch']
 
   - package-ecosystem: 'github-actions'

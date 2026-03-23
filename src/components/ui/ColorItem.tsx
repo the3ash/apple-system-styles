@@ -32,7 +32,8 @@ const ColorItem = memo(({ color, prefixType, contentType }: ColorItemProps) => {
   }
 
   const textColorClass = color.theme === 'dark' ? 'text-white' : 'text-black'
-  const needsBorder = color.theme === 'light' && (color.hex === '#ffffffff' || color.hex === '#ffffff99')
+  const needsBorder =
+    color.theme === 'light' && (color.hex === '#ffffffff' || color.hex === '#ffffff99')
   const hoverBgColor = color.theme === 'dark' ? 'hover:bg-[#222]' : 'hover:bg-black/4'
 
   const swatchStyle = useMemo(
@@ -40,39 +41,39 @@ const ColorItem = memo(({ color, prefixType, contentType }: ColorItemProps) => {
       backgroundColor: color.hex,
       border: needsBorder ? `0.5px solid #ddd` : 'none',
     }),
-    [color.hex, needsBorder]
+    [color.hex, needsBorder],
   )
 
   const backgroundLayerStyle = useMemo(
     () => ({
       backgroundColor: color.theme === 'dark' ? '#000000' : '#ffffff',
     }),
-    [color.theme]
+    [color.theme],
   )
 
   return (
     <div
-      className={`flex items-start px-6 md:px-12 py-2 xl:items-center gap-3 cursor-pointer relative z-10 ${textColorClass} ${hoverBgColor} transition-colors duration-100 ease-out`}
+      className={`relative z-10 flex cursor-pointer items-start gap-3 px-6 py-2 md:px-12 xl:items-center ${textColorClass} ${hoverBgColor} transition-colors duration-100 ease-out`}
       onClick={handleClick}
     >
       {/* Color swatch with background layer */}
-      <div className="flex items-center justify-center w-9 h-10.5">
-        <div className="relative w-9 h-9">
-          <div className="absolute inset-0 w-9 h-9" style={backgroundLayerStyle} />
-          <div className="absolute inset-0 w-9 h-9" style={swatchStyle} />
+      <div className="flex h-10.5 w-9 items-center justify-center">
+        <div className="relative h-9 w-9">
+          <div className="absolute inset-0 h-9 w-9" style={backgroundLayerStyle} />
+          <div className="absolute inset-0 h-9 w-9" style={swatchStyle} />
         </div>
       </div>
 
       {/* Color info */}
-      <div className="flex flex-col text-body flex-1 min-w-0">
+      <div className="text-body flex min-w-0 flex-1 flex-col">
         <span>
           {displayName}
           {showCheckmark && <span className={`ml-2 ${textColorClass}`}>(√)</span>}
         </span>
         <div className="color-info-layout">
-          <span className="ml-2 mt-0.75 whitespace-nowrap">{color.rgba}</span>
-          <span className="ml-2 mt-0.75 color-separator">·</span>
-          <span className="ml-2 mt-0.75 color-hex-margin-small color-hex-margin-large whitespace-nowrap">
+          <span className="mt-0.75 ml-2 whitespace-nowrap">{color.rgba}</span>
+          <span className="color-separator mt-0.75 ml-2">·</span>
+          <span className="color-hex-margin-small color-hex-margin-large mt-0.75 ml-2 whitespace-nowrap">
             {color.hex}
           </span>
         </div>
