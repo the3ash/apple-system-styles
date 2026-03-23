@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import type { ContentType, PrefixType } from '../types'
-import { storage, STORAGE_KEYS } from '../utils/storage'
+import type { ContentType, PrefixType } from '@/types'
+import { storage, STORAGE_KEYS } from '@/utils/storage'
 
 export const useAppState = () => {
   // Initialize state directly from localStorage, fallback to first option

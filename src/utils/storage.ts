@@ -1,4 +1,4 @@
-import { STORAGE_KEYS } from '../types'
+import { STORAGE_KEYS } from '@/types'
 
 // Storage utility functions with better error handling and type safety
 export { STORAGE_KEYS }

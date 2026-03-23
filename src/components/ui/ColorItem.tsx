@@ -1,6 +1,6 @@
 import { useState, useMemo, memo } from 'react'
-import type { ColorItemProps } from '../../types'
-import { copyText } from '../../utils/clipboard'
+import type { ColorItemProps } from '@/types'
+import { copyText } from '@/utils/clipboard'
 
 const ColorItem = memo(({ color, prefixType, contentType }: ColorItemProps) => {
   const [showCheckmark, setShowCheckmark] = useState(false)

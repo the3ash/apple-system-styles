@@ -1,5 +1,5 @@
-import TextItem from '../ui/TextItem'
-import type { TextData } from '../../types'
+import TextItem from '@/components/ui/TextItem'
+import type { TextData } from '@/types'
 
 interface TextContainerProps {
   texts: TextData[]

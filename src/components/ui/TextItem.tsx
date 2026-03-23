@@ -1,7 +1,7 @@
-import type { TextItemProps } from '../../types'
-import Border from './Border'
 import { useState, memo } from 'react'
-import { copyText } from '../../utils/clipboard'
+import Border from '@/components/ui/Border'
+import type { TextItemProps } from '@/types'
+import { copyText } from '@/utils/clipboard'
 
 const TITLE_MAPPING: Record<string, string> = {
   largeTitle: 'Large Title',

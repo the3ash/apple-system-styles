@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import type { SwitchItemProps } from '../../types'
+import type { SwitchItemProps } from '@/types'
 
 const SwitchItem: React.FC<SwitchItemProps> = ({
   options,

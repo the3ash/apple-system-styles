@@ -1,7 +1,7 @@
 import React from 'react'
-import ColorItem from '../ui/ColorItem'
-import BGPattern from './BGPattern'
-import type { ColorsContainerProps } from '../../types'
+import BGPattern from '@/components/layout/BGPattern'
+import ColorItem from '@/components/ui/ColorItem'
+import type { ColorsContainerProps } from '@/types'
 
 const ColorsContainer: React.FC<ColorsContainerProps> = ({
   colors,

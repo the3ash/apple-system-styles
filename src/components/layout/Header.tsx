@@ -1,5 +1,5 @@
-import type { HeaderProps } from '../../types'
-import Border from '../ui/Border'
+import Border from '@/components/ui/Border'
+import type { HeaderProps } from '@/types'
 
 const Header: React.FC<HeaderProps> = ({ title, description }) => {
   return (

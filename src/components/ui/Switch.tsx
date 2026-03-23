@@ -1,6 +1,6 @@
 import React from 'react'
-import SwitchItem from './SwitchItem'
-import type { SwitchProps, ContentType, PrefixType } from '../../types'
+import SwitchItem from '@/components/ui/SwitchItem'
+import type { ContentType, PrefixType, SwitchProps } from '@/types'
 
 const Switch: React.FC<SwitchProps> = ({
   contentType,
