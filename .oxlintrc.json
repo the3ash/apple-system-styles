@@ -4,6 +4,10 @@
   "env": {
     "browser": true
   },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
   "rules": {
     "no-unused-vars": [
       "error",
@@ -12,6 +16,7 @@
         "varsIgnorePattern": "^_"
       }
     ],
+    "react/react-in-jsx-scope": "off",
     "typescript/no-explicit-any": "warn",
     "react/rules-of-hooks": "error",
     "react/exhaustive-deps": "warn"
