@@ -7,7 +7,7 @@ interface TextContainerProps {
 
 const TextContainer = ({ texts }: TextContainerProps) => {
   return (
-    <div className="relative h-[1680px] flex-1 bg-white shadow-sm">
+    <div className="relative h-420 flex-1 bg-white shadow-sm">
       <div className="relative z-10 py-4 md:py-8">
         <div className="grid">
           {texts.map((text) => (
