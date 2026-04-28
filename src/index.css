@@ -19,6 +19,12 @@
 }
 
 @layer base {
+  html,
+  [data-scroll-container] {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, gray 50%, transparent) transparent;
+  }
+
   html {
     background-color: #fafafa;
   }
