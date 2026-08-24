@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import ColorsContainer from '@/components/layout/ColorsContainer'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
@@ -8,29 +7,15 @@ import nsColorsData from '@/data/ns-color.json'
 import textData from '@/data/text.json'
 import uiColorsData from '@/data/ui-color.json'
 import { useAppState } from '@/hooks/useAppState'
-import type { ColorData } from '@/types'
+import { filterColorsByTheme } from '@/utils/colors'
+
+const lightUiColors = filterColorsByTheme(uiColorsData, 'light')
+const darkUiColors = filterColorsByTheme(uiColorsData, 'dark')
+const lightNsColors = filterColorsByTheme(nsColorsData, 'light')
+const darkNsColors = filterColorsByTheme(nsColorsData, 'dark')
 
 function App() {
   const { contentType, prefixType, setContentType, setPrefixType } = useAppState()
-
-  // Filter colors by theme with proper typing - memoized since data is static
-  const lightUiColors = useMemo(
-    () => uiColorsData.filter((color) => color.theme === 'light') as ColorData[],
-    [],
-  )
-  const darkUiColors = useMemo(
-    () => uiColorsData.filter((color) => color.theme === 'dark') as ColorData[],
-    [],
-  )
-
-  const lightNsColors = useMemo(
-    () => nsColorsData.filter((color) => color.theme === 'light') as ColorData[],
-    [],
-  )
-  const darkNsColors = useMemo(
-    () => nsColorsData.filter((color) => color.theme === 'dark') as ColorData[],
-    [],
-  )
 
   const renderContent = () => {
     if (contentType === 'ui-colors') {

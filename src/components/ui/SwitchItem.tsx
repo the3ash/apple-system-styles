@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { SwitchItemProps } from '@/types'
 
-const SwitchItem: React.FC<SwitchItemProps> = ({
+const SwitchItem = <T extends string>({
   options,
   value,
   onChange,
   disabledOptions = [],
-}) => {
-  const [selectedId, setSelectedId] = useState<string | undefined>(value)
+}: SwitchItemProps<T>) => {
+  const [selectedId, setSelectedId] = useState<T | undefined>(value)
 
   useEffect(() => {
     setSelectedId(value)
   }, [value])
 
-  const handleToggle = (id: string) => {
+  const handleToggle = (id: T) => {
     if (disabledOptions.includes(id)) {
       return
     }

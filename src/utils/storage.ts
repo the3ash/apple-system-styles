@@ -19,7 +19,7 @@ export const storage = {
   },
 
   // Set item to localStorage with error handling
-  set: <T>(key: string, value: T): void => {
+  set: (key: string, value: unknown): void => {
     try {
       localStorage.setItem(key, JSON.stringify(value))
     } catch (error) {

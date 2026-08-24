@@ -15,14 +15,19 @@ updates:
       include: 'scope'
     labels:
       - 'dependencies'
+    ignore:
+      - dependency-name: 'vite'
+      - dependency-name: 'vite-plus'
+      - dependency-name: 'vitest'
+      - dependency-name: '@voidzero-dev/vite-plus-core'
     groups:
       # Frontend frameworks
       react:
         patterns: ['react', 'react-dom', '@types/react*']
         update-types: ['minor', 'patch']
       # Build tools
-      vite:
-        patterns: ['vite', '@vitejs/*']
+      vite-plugins:
+        patterns: ['@vitejs/*']
         update-types: ['minor', 'patch']
       # CSS frameworks
       tailwind:
