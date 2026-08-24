@@ -10,28 +10,24 @@ const Switch: React.FC<SwitchProps> = ({
 }) => {
   return (
     <div className="mb-4 flex flex-col items-center justify-between gap-0 sm:flex-row">
-      <SwitchItem
+      <SwitchItem<ContentType>
         options={[
           { id: 'ui-colors', label: 'UIColor' },
           { id: 'ns-colors', label: 'NSColor' },
           { id: 'text', label: 'Text' },
         ]}
         value={contentType}
-        onChange={(selectedId: string) => onContentTypeChange(selectedId as ContentType)}
+        onChange={onContentTypeChange}
       />
       <div className="flex items-center gap-4">
         <span className="text-body">Prefix: </span>
-        <SwitchItem
+        <SwitchItem<PrefixType>
           options={[
             { id: 'off', label: 'Off' },
             { id: 'on', label: 'On' },
           ]}
           value={prefixType}
-          onChange={
-            contentType === 'text'
-              ? undefined
-              : (selectedId: string) => onPrefixTypeChange(selectedId as PrefixType)
-          }
+          onChange={contentType === 'text' ? undefined : onPrefixTypeChange}
           disabledOptions={contentType === 'text' ? ['on', 'off'] : []}
         />
       </div>

@@ -15,8 +15,8 @@ export const STORAGE_KEYS: Record<StorageKey, string> = {
 } as const
 
 // Switch component types
-export interface SwitchOption {
-  id: string
+export interface SwitchOption<T extends string = string> {
+  id: T
   label: string
 }
 
@@ -27,11 +27,11 @@ export interface SwitchProps {
   onPrefixTypeChange: (type: PrefixType) => void
 }
 
-export interface SwitchItemProps {
-  options: SwitchOption[]
-  value?: string
-  onChange?: (selectedId: string) => void
-  disabledOptions?: string[]
+export interface SwitchItemProps<T extends string = string> {
+  options: SwitchOption<T>[]
+  value?: T
+  onChange?: (selectedId: T) => void
+  disabledOptions?: T[]
 }
 
 // Data types
