@@ -15,31 +15,14 @@ updates:
       include: 'scope'
     labels:
       - 'dependencies'
-    ignore:
-      - dependency-name: 'vite'
-      - dependency-name: 'vite-plus'
-      - dependency-name: 'vitest'
-      - dependency-name: '@voidzero-dev/vite-plus-core'
     groups:
       # Frontend frameworks
       react:
         patterns: ['react', 'react-dom', '@types/react*']
         update-types: ['minor', 'patch']
-      # Build tools
-      vite-plugins:
-        patterns: ['@vitejs/*']
-        update-types: ['minor', 'patch']
       # CSS frameworks
       tailwind:
         patterns: ['tailwindcss', '@tailwindcss/*']
-        update-types: ['minor', 'patch']
-      # Routing
-      routing:
-        patterns: ['react-router*']
-        update-types: ['minor', 'patch']
-      # Code quality tools
-      oxc:
-        patterns: ['oxfmt', 'oxlint', '@oxlint/*']
         update-types: ['minor', 'patch']
       # TypeScript
       typescript:
@@ -50,13 +33,14 @@ updates:
         patterns: ['*']
         exclude-patterns:
           - 'react*'
-          - 'vite*'
           - 'tailwind*'
-          - 'oxfmt'
-          - 'oxlint'
-          - '@oxlint/*'
           - 'typescript*'
         update-types: ['minor', 'patch']
+    ignore:
+      # These versions must stay aligned with the globally selected Vite+ release.
+      - dependency-name: 'vite'
+      - dependency-name: 'vite-plus'
+      - dependency-name: '@voidzero-dev/vite-plus-core'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
