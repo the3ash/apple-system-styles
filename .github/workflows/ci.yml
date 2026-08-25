@@ -22,8 +22,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   validate:
@@ -37,10 +36,12 @@ jobs:
       - name: Setup Vite+
         uses: voidzero-dev/setup-vp@v1.17.0
         with:
-          node-version: 'lts'
+          node-version-file: package.json
           cache: true
-          run-install: |
-            args: ['--frozen-lockfile', '--prefer-offline']
+          run-install: false
+
+      - name: Install dependencies
+        run: vp install --frozen-lockfile
 
       - name: Check
         run: vp check
@@ -50,13 +51,6 @@ jobs:
 
       - name: Build
         run: vp build
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v7
-        with:
-          name: dist
-          path: dist/
-          retention-days: 7
 
   auto-merge:
     name: Auto Merge
@@ -69,6 +63,9 @@ jobs:
         github.actor == 'dependabot[bot]' ||
         contains(github.event.pull_request.labels.*.name, 'automerge')
       )
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Auto approve
