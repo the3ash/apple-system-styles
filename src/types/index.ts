@@ -29,7 +29,7 @@ export interface SwitchProps {
 
 export interface SwitchItemProps<T extends string = string> {
   options: SwitchOption<T>[]
-  value?: T
+  value: T
   onChange?: (selectedId: T) => void
   disabledOptions?: T[]
 }

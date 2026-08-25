@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import type { SwitchItemProps } from '@/types'
 
 const SwitchItem = <T extends string>({
@@ -7,17 +6,10 @@ const SwitchItem = <T extends string>({
   onChange,
   disabledOptions = [],
 }: SwitchItemProps<T>) => {
-  const [selectedId, setSelectedId] = useState<T | undefined>(value)
-
-  useEffect(() => {
-    setSelectedId(value)
-  }, [value])
-
   const handleToggle = (id: T) => {
     if (disabledOptions.includes(id)) {
       return
     }
-    setSelectedId(id)
     onChange?.(id)
   }
 
@@ -34,7 +26,7 @@ const SwitchItem = <T extends string>({
             onClick={() => handleToggle(option.id)}
           >
             <div
-              className={`h-2.5 w-2.5 transition-colors duration-100 ease-out ${selectedId === option.id ? 'bg-blue' : isDisabled ? 'bg-gray' : 'bg-gray group-hover:bg-[#ccc]'} `}
+              className={`h-2.5 w-2.5 transition-colors duration-100 ease-out ${value === option.id ? 'bg-blue' : isDisabled ? 'bg-gray' : 'bg-gray group-hover:bg-[#ccc]'} `}
             />
             <span className={`text-body ml-1.5 ${isDisabled ? 'line-through' : ''}`}>
               {option.label}
