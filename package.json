@@ -10,6 +10,10 @@
     "preview": "vp preview",
     "check": "vp check",
     "check:fix": "vp check --fix",
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
     "prepare": "vp config"
   },
   "dependencies": {
